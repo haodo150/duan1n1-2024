@@ -1,5 +1,5 @@
 <?php
     include_once "model/pdo.php";
 
-    function 
+    function d
 ?>

@@ -4,7 +4,7 @@
             <span class="home__subtitle">Hot promotios</span>
             <h1 class="home__title">Fashion Trending <span>Great Collection</span></h1>
             <p class="home__description">Save more with coupons & up to 20% off</p>
-            <a href="shop.html" class="btn">Shop Now</a>
+            <a href="?mod=page&act=products" class="btn">Shop Now</a>
           </div>
           <img src="public/assets/img/851655-removebg-preview.png" alt="" class="home__img">
         </div>
@@ -16,35 +16,35 @@
 
         <div class="categories__container swiper">
           <div class="swiper-wrapper">
-            <a href="shop.html" class="category__item swiper-slide">
+            <a href="?mod=page&act=products" class="category__item swiper-slide">
               <img src="public/assets/img/n1.1.png" alt="" class="category__img">
               <h3 class="category__title">Nike Air Force 1'07</h3>
             </a>
-            <a href="shop.html" class="category__item swiper-slide">
+            <a href="?mod=page&act=products" class="category__item swiper-slide">
               <img src="public/assets/img/n2.1.png" alt="" class="category__img">
               <h3 class="category__title">Nike Air Force 1 ES</h3>
             </a>
-            <a href="shop.html" class="category__item swiper-slide">
+            <a href="?mod=page&act=products" class="category__item swiper-slide">
               <img src="public/assets/img/n3.1.png" alt="" class="category__img">
               <h3 class="category__title">Nike Air Force 1 EasyOn</h3>
             </a>
-            <a href="shop.html" class="category__item swiper-slide">
+            <a href="?mod=page&act=products" class="category__item swiper-slide">
               <img src="public/assets/img/n4.1.png" alt="" class="category__img">
               <h3 class="category__title">Nike Air Force 1 Shadow</h3>
             </a>
-            <a href="shop.html" class="category__item swiper-slide">
+            <a href="?mod=page&act=products" class="category__item swiper-slide">
               <img src="public/assets/img/n5.1.jpg" alt="" class="category__img">
               <h3 class="category__title">Nike Air Force 1 LE</h3>
             </a>
-            <a href="shop.html" class="category__item swiper-slide">
+            <a href="?mod=page&act=products" class="category__item swiper-slide">
               <img src="public/assets/img/n6.1.png" alt="" class="category__img">
               <h3 class="category__title">Nike Air Force 1 Sage</h3>
             </a>
-            <a href="shop.html" class="category__item swiper-slide">
+            <a href="?mod=page&act=products" class="category__item swiper-slide">
               <img src="public/assets/img/n7.1.png" alt="" class="category__img">
               <h3 class="category__title">Nike Air Force 1 Jordan</h3>
             </a>
-            <a href="shop.html" class="category__item swiper-slide">
+            <a href="?mod=page&act=products" class="category__item swiper-slide">
               <img src="public/assets/img/n8.1.png" alt="" class="category__img">
               <h3 class="category__title">Nike Air Force 1 LV8</h3>
             </a>
