@@ -2,7 +2,7 @@
 // Kết nối đến CSDL sử dụng PDO
 function pdo_connect(){
      $servername = "localhost";
-     $database = "hcmclib_ca1-246";
+     $database = "sneakers";
      $username = "root";
      $password = "";
     try{

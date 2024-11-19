@@ -28,7 +28,7 @@
           <p class="header__alert-news">
             Super Value Deals - Save more with coupons
           </p>
-          <a href="login-register.html" class="header__top-action">
+          <a href="?mod=user&act=login" class="header__top-action">
             Log In/ Sign In
           </a>
         </div>
@@ -57,13 +57,13 @@
               <a href="?mod=page&act=products" class="nav__link">Shop</a>
             </li>
             <li class="nav__item">
-              <a href="accounts.html" class="nav__link">My account</a>
+              <a href="?mod=user&act=account" class="nav__link">My account</a>
             </li>
             <li class="nav__item">
-              <a href="compare.html" class="nav__link">Compare</a>
+              <a href="?mod=page&act=compare" class="nav__link">Compare</a>
             </li>
             <li class="nav__item">
-              <a href="login-register.html" class="nav__link">Login</a>
+              <a href="?mod=user&act=login" class="nav__link">Login</a>
             </li>
           </ul>
 
@@ -76,14 +76,14 @@
         </div>
 
         <div class="header__user-action">
-          <a href="wishlist.html" class="header__action-btn">
+          <a href="?mod=page&act=wishlist" class="header__action-btn">
             <img src="public/assets/img/icon-heart.svg" alt="">
             <span class="count">0</span>
           </a>
         </div>
 
         <div class="header__user-action">
-          <a href="cart.html" class="header__action-btn">
+          <a href="?mod=page&act=cart" class="header__action-btn">
             <img src="public/assets/img/icon-cart.svg" alt="">
             <span class="count">0</span>
           </a>
