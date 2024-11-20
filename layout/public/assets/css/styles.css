@@ -1543,6 +1543,8 @@ table{
 .edit {
   font-size: var(--small-font-size);
 }
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1400px) {
