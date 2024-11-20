@@ -42,48 +42,48 @@
           <div class="tab__item active-tab" content id="featured">
             <div class="products__container grid">
               <?php foreach($homeProductsFeatured as $featured): ?>
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $featured['id_product']?>" class="product__images">
-                    <img src="<?= $baseURL?><?= $featured['img']?>" alt="" class="product__img default">
+                <div class="product__item">
+                  <div class="product__banner">
+                    <a href="?mod=page&act=detail&id=<?= $featured['id_product']?>" class="product__images">
+                      <img src="<?= $baseURL?><?= $featured['img']?>" alt="" class="product__img default">
 
-                    <img src="public/assets/img/n1.2.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
+                      <img src="public/assets/img/n1.2.png" alt="" class="product__img hover">
                     </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
+                    <div class="product__actions">
+                      <a href="#" class="action__btn" aria-label="Quick View">
+                        <i class="fi fi-rs-eye"></i>
+                      </a>
+                      <a href="#" class="action__btn" aria-label="Add To Wishlist">
+                        <i class="fi fi-rs-heart"></i>
+                      </a>
+                      <a href="#" class="action__btn" aria-label="Compare">
+                        <i class="fi fi-rs-shuffle "></i>
+                      </a>
+                    </div>
+
+                    <div class="product__badge light-pink">Hot</div>
+                  </div>
+                  <div class="product__content">
+                    <span class="product__category"><?= $featured['id_categories']?></span>
+                    <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
+                      <h3 class="product__title"><?= $featured['name_products']?></h3>
                     </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
+                    <div class="product__rating">
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                    </div>
+                    <div class="product__price flex">
+                      <span class="new__price">$<?= $featured['price_products']?></span>
+                    </div>
+
+                    <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                      <i class="fi fi-rs-shopping-bag-add"></i>
                     </a>
                   </div>
-
-                  <div class="product__badge light-pink">Hot</div>
                 </div>
-                <div class="product__content">
-                  <span class="product__category"><?= $featured['id_categories']?></span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title"><?= $featured['name_products']?></h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$<?= $featured['price_products']?></span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
               <?php endforeach; ?>
 
               
@@ -92,49 +92,49 @@
 
           <div class="tab__item" content id="popular">
             <div class="products__container grid">
-            <?php foreach($homeProductsPopuler as $populer): ?>
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                    <img src="<?= $baseURL?><?= $populer['img']?>" alt="" class="product__img default">
+              <?php foreach($homeProductsPopuler as $populer): ?>
+                <div class="product__item">
+                  <div class="product__banner">
+                    <a href="?mod=page&act=detail&id=<?= $populer['id_product']?>" class="product__images">
+                      <img src="<?= $baseURL?><?= $populer['img']?>" alt="" class="product__img default">
 
-                    <img src="public/assets/img/n1.2.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
+                      <img src="public/assets/img/n1.2.png" alt="" class="product__img hover">
                     </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
+                    <div class="product__actions">
+                      <a href="#" class="action__btn" aria-label="Quick View">
+                        <i class="fi fi-rs-eye"></i>
+                      </a>
+                      <a href="#" class="action__btn" aria-label="Add To Wishlist">
+                        <i class="fi fi-rs-heart"></i>
+                      </a>
+                      <a href="#" class="action__btn" aria-label="Compare">
+                        <i class="fi fi-rs-shuffle "></i>
+                      </a>
+                    </div>
+
+                    <div class="product__badge light-pink">Hot</div>
+                  </div>
+                  <div class="product__content">
+                    <span class="product__category"><?= $populer['id_categories']?></span>
+                    <a href="?mod=page&act=detail&id=<?= $populer['id_product']?>">
+                      <h3 class="product__title"><?= $populer['name_products']?></h3>
                     </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
+                    <div class="product__rating">
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                    </div>
+                    <div class="product__price flex">
+                      <span class="new__price">$<?= $populer['price_products']?></span>
+                    </div>
+
+                    <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                      <i class="fi fi-rs-shopping-bag-add"></i>
                     </a>
                   </div>
-
-                  <div class="product__badge light-pink">Hot</div>
                 </div>
-                <div class="product__content">
-                  <span class="product__category"><?= $populer['id_categories']?></span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title"><?= $populer['name_products']?></h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$<?= $populer['price_products']?></span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
               <?php endforeach; ?>
 
             </div>
@@ -142,356 +142,50 @@
 
           <div class="tab__item" content id="new-added">
             <div class="products__container grid">
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                    <img src="public/assets/img/a1,1.png" alt="" class="product__img default">
+              <?php foreach ($homeProductsAdded as $new_added) : ?>
+                <div class="product__item">
+                  <div class="product__banner">
+                    <a href="?mod=page&act=detail&id=<?= $new_added['id_product']?>" class="product__images">
+                      <img src="<?= $baseURL?><?= $new_added['img']?>" alt="" class="product__img default">
+                      <img src="public/assets/img/a1,3.png" alt="" class="product__img hover">
+                    </a>
+                    <div class="product__actions">
+                      <a href="#" class="action__btn" aria-label="Quick View">
+                        <i class="fi fi-rs-eye"></i>
+                      </a>
+                      <a href="#" class="action__btn" aria-label="Add To Wishlist">
+                        <i class="fi fi-rs-heart"></i>
+                      </a>
+                      <a href="#" class="action__btn" aria-label="Compare">
+                        <i class="fi fi-rs-shuffle "></i>
+                      </a>
+                    </div>
 
-                    <img src="public/assets/img/a1,3.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
+                    <div class="product__badge light-pink">Hot</div>
+                  </div>
+                  <div class="product__content">
+                    <span class="product__category"><?= $new_added['id_categories']?></span>
+                    <a href="?mod=page&act=detail&id=<?= $populer['id_product']?>">
+                      <h3 class="product__title"><?= $new_added['name_products']?></h3>
                     </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
+                    <div class="product__rating">
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                      <i class="fi fi-rs-star"></i>
+                    </div>
+                    <div class="product__price flex">
+                      <span class="new__price">$<?= $new_added['price_products']?></span>
+                    </div>
+
+                    <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                      <i class="fi fi-rs-shopping-bag-add"></i>
                     </a>
                   </div>
-
-                  <div class="product__badge light-pink">Hot</div>
                 </div>
-                <div class="product__content">
-                  <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title">Colorful Pattern Shirts</h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$200.00</span>
-                    <span class="old__price">$245.00</span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                    <img src="public/assets/img/a2,1.png" alt="" class="product__img default">
-
-                    <img src="public/assets/img/a2,3.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
-                    </a>
-                  </div>
-
-                  <div class="product__badge light-green">Hot</div>
-                </div>
-                <div class="product__content">
-                  <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title">Colorful Pattern Shirts</h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$200.00</span>
-                    <span class="old__price">$245.00</span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                    <img src="public/assets/img/a3,1.png" alt="" class="product__img default">
-
-                    <img src="public/assets/img/a3,2.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
-                    </a>
-                  </div>
-
-                  <div class="product__badge light-orange">Hot</div>
-                </div>
-                <div class="product__content">
-                  <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title">Colorful Pattern Shirts</h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$200.00</span>
-                    <span class="old__price">$245.00</span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                    <img src="public/assets/img/a4,1.png" alt="" class="product__img default">
-
-                    <img src="public/assets/img/a4,3.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
-                    </a>
-                  </div>
-
-                  <div class="product__badge light-blue">Hot</div>
-                </div>
-                <div class="product__content">
-                  <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title">Colorful Pattern Shirts</h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$200.00</span>
-                    <span class="old__price">$245.00</span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                    <img src="public/assets/img/a5,1.png" alt="" class="product__img default">
-
-                    <img src="public/assets/img/a5,3.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
-                    </a>
-                  </div>
-
-                  <div class="product__badge light-pink">-30%</div>
-                </div>
-                <div class="product__content">
-                  <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title">Colorful Pattern Shirts</h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$200.00</span>
-                    <span class="old__price">$245.00</span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                    <img src="public/assets/img/a6,1.png" alt="" class="product__img default">
-
-                    <img src="public/assets/img/a6,3.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
-                    </a>
-                  </div>
-
-                  <div class="product__badge light-pink">-22%</div>
-                </div>
-                <div class="product__content">
-                  <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title">Colorful Pattern Shirts</h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$200.00</span>
-                    <span class="old__price">$245.00</span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                    <img src="public/assets/img/a7,1.png" alt="" class="product__img default">
-
-                    <img src="public/assets/img/a7,3.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
-                    </a>
-                  </div>
-
-                  <div class="product__badge light-green">Hot</div>
-                </div>
-                <div class="product__content">
-                  <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title">Colorful Pattern Shirts</h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$200.00</span>
-                    <span class="old__price">$245.00</span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="product__item">
-                <div class="product__banner">
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                    <img src="public/assets/img/a8,1.png" alt="" class="product__img default">
-
-                    <img src="public/assets/img/a8,3.png" alt="" class="product__img hover">
-                  </a>
-                  <div class="product__actions">
-                    <a href="#" class="action__btn" aria-label="Quick View">
-                      <i class="fi fi-rs-eye"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                      <i class="fi fi-rs-heart"></i>
-                    </a>
-                    <a href="#" class="action__btn" aria-label="Compare">
-                      <i class="fi fi-rs-shuffle "></i>
-                    </a>
-                  </div>
-
-                </div>
-                <div class="product__content">
-                  <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                    <h3 class="product__title">Colorful Pattern Shirts</h3>
-                  </a>
-                  <div class="product__rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-                  <div class="product__price flex">
-                    <span class="new__price">$200.00</span>
-                    <span class="old__price">$245.00</span>
-                  </div>
-
-                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                    <i class="fi fi-rs-shopping-bag-add"></i>
-                  </a>
-                </div>
-              </div>
+              <?php endforeach; ?>
+              
             </div>
           </div>
 
@@ -594,313 +288,51 @@
 
         <div class="new__container swiper">
           <div class="swiper-wrapper">
-            <div class="product__item swiper-slide">
-              <div class="product__banner">
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                  <img src="public/assets/img/a1,1.png" alt="" class="product__img default">
+            <?php foreach ($homeProductsArrival as $new_arrival): ?>
+              <div class="product__item swiper-slide">
+                <div class="product__banner">
+                  <a href="?mod=page&act=detail&id=<?= $new_arrival['id_product']?>" class="product__images">
+                    <img src="<?= $baseURL?><?= $new_arrival['img']?>" alt="" class="product__img default">
 
-                  <img src="public/assets/img/a1,3.png" alt="" class="product__img hover">
-                </a>
-                <div class="product__actions">
-                  <a href="#" class="action__btn" aria-label="Quick View">
-                    <i class="fi fi-rs-eye"></i>
+                    <img src="public/assets/img/a1,3.png" alt="" class="product__img hover">
                   </a>
-                  <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                    <i class="fi fi-rs-heart"></i>
+                  <div class="product__actions">
+                    <a href="#" class="action__btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
+                    <a href="#" class="action__btn" aria-label="Add To Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
+                    <a href="#" class="action__btn" aria-label="Compare">
+                      <i class="fi fi-rs-shuffle "></i>
+                    </a>
+                  </div>
+
+                  <div class="product__badge light-pink">Hot</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category"><?= $new_arrival['id_categories']?></span>
+                  <a href="?mod=page&act=detail&id=<?= $new_arrival['id_product']?>">
+                    <h3 class="product__title"><?= $new_arrival['name_products']?></h3>
                   </a>
-                  <a href="#" class="action__btn" aria-label="Compare">
-                    <i class="fi fi-rs-shuffle "></i>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$<?= $new_arrival['price_products']?></span>
+                  </div>
+
+                  <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                    <i class="fi fi-rs-shopping-bag-add"></i>
                   </a>
                 </div>
-
-                <div class="product__badge light-pink">Hot</div>
               </div>
-              <div class="product__content">
-                <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                  <h3 class="product__title">Colorful Pattern Shirts</h3>
-                </a>
-                <div class="product__rating">
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                </div>
-                <div class="product__price flex">
-                  <span class="new__price">$200.00</span>
-                  <span class="old__price">$245.00</span>
-                </div>
-
-                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                  <i class="fi fi-rs-shopping-bag-add"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="product__item swiper-slide">
-              <div class="product__banner">
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                  <img src="public/assets/img/a2,1.png" alt="" class="product__img default">
-
-                  <img src="public/assets/img/a2,3.png" alt="" class="product__img hover">
-                </a>
-                <div class="product__actions">
-                  <a href="#" class="action__btn" aria-label="Quick View">
-                    <i class="fi fi-rs-eye"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                    <i class="fi fi-rs-heart"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Compare">
-                    <i class="fi fi-rs-shuffle "></i>
-                  </a>
-                </div>
-
-                <div class="product__badge light-green">Hot</div>
-              </div>
-              <div class="product__content">
-                <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                  <h3 class="product__title">Colorful Pattern Shirts</h3>
-                </a>
-                <div class="product__rating">
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                </div>
-                <div class="product__price flex">
-                  <span class="new__price">$200.00</span>
-                  <span class="old__price">$245.00</span>
-                </div>
-
-                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                  <i class="fi fi-rs-shopping-bag-add"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="product__item swiper-slide">
-              <div class="product__banner">
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                  <img src="public/assets/img/a3,1.png" alt="" class="product__img default">
-
-                  <img src="public/assets/img/a3,2.png" alt="" class="product__img hover">
-                </a>
-                <div class="product__actions">
-                  <a href="#" class="action__btn" aria-label="Quick View">
-                    <i class="fi fi-rs-eye"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                    <i class="fi fi-rs-heart"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Compare">
-                    <i class="fi fi-rs-shuffle "></i>
-                  </a>
-                </div>
-
-                <div class="product__badge light-orange">Hot</div>
-              </div>
-              <div class="product__content">
-                <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                  <h3 class="product__title">Colorful Pattern Shirts</h3>
-                </a>
-                <div class="product__rating">
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                </div>
-                <div class="product__price flex">
-                  <span class="new__price">$200.00</span>
-                  <span class="old__price">$245.00</span>
-                </div>
-
-                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                  <i class="fi fi-rs-shopping-bag-add"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="product__item swiper-slide">
-              <div class="product__banner">
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                  <img src="public/assets/img/a4,1.png" alt="" class="product__img default">
-
-                  <img src="public/assets/img/a4,3.png" alt="" class="product__img hover">
-                </a>
-                <div class="product__actions">
-                  <a href="#" class="action__btn" aria-label="Quick View">
-                    <i class="fi fi-rs-eye"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                    <i class="fi fi-rs-heart"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Compare">
-                    <i class="fi fi-rs-shuffle "></i>
-                  </a>
-                </div>
-
-                <div class="product__badge light-blue">Hot</div>
-              </div>
-              <div class="product__content">
-                <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                  <h3 class="product__title">Colorful Pattern Shirts</h3>
-                </a>
-                <div class="product__rating">
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                </div>
-                <div class="product__price flex">
-                  <span class="new__price">$200.00</span>
-                  <span class="old__price">$245.00</span>
-                </div>
-
-                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                  <i class="fi fi-rs-shopping-bag-add"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="product__item swiper-slide">
-              <div class="product__banner">
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                  <img src="public/assets/img/a5,1.png" alt="" class="product__img default">
-
-                  <img src="public/assets/img/a5,3.png" alt="" class="product__img hover">
-                </a>
-                <div class="product__actions">
-                  <a href="#" class="action__btn" aria-label="Quick View">
-                    <i class="fi fi-rs-eye"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                    <i class="fi fi-rs-heart"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Compare">
-                    <i class="fi fi-rs-shuffle "></i>
-                  </a>
-                </div>
-
-                <div class="product__badge light-pink">-30%</div>
-              </div>
-              <div class="product__content">
-                <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                  <h3 class="product__title">Colorful Pattern Shirts</h3>
-                </a>
-                <div class="product__rating">
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                </div>
-                <div class="product__price flex">
-                  <span class="new__price">$200.00</span>
-                  <span class="old__price">$245.00</span>
-                </div>
-
-                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                  <i class="fi fi-rs-shopping-bag-add"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="product__item swiper-slide">
-              <div class="product__banner">
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                  <img src="public/assets/img/a6,1.png" alt="" class="product__img default">
-
-                  <img src="public/assets/img/a6,3.png" alt="" class="product__img hover">
-                </a>
-                <div class="product__actions">
-                  <a href="#" class="action__btn" aria-label="Quick View">
-                    <i class="fi fi-rs-eye"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                    <i class="fi fi-rs-heart"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Compare">
-                    <i class="fi fi-rs-shuffle "></i>
-                  </a>
-                </div>
-
-                <div class="product__badge light-pink">-22%</div>
-              </div>
-              <div class="product__content">
-                <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                  <h3 class="product__title">Colorful Pattern Shirts</h3>
-                </a>
-                <div class="product__rating">
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                </div>
-                <div class="product__price flex">
-                  <span class="new__price">$200.00</span>
-                  <span class="old__price">$245.00</span>
-                </div>
-
-                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                  <i class="fi fi-rs-shopping-bag-add"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="product__item swiper-slide">
-              <div class="product__banner">
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
-                  <img src="public/assets/img/a7,1.png" alt="" class="product__img default">
-
-                  <img src="public/assets/img/a7,3.png" alt="" class="product__img hover">
-                </a>
-                <div class="product__actions">
-                  <a href="#" class="action__btn" aria-label="Quick View">
-                    <i class="fi fi-rs-eye"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Add To Wishlist">
-                    <i class="fi fi-rs-heart"></i>
-                  </a>
-                  <a href="#" class="action__btn" aria-label="Compare">
-                    <i class="fi fi-rs-shuffle "></i>
-                  </a>
-                </div>
-
-                <div class="product__badge light-green">Hot</div>
-              </div>
-              <div class="product__content">
-                <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
-                  <h3 class="product__title">Colorful Pattern Shirts</h3>
-                </a>
-                <div class="product__rating">
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                  <i class="fi fi-rs-star"></i>
-                </div>
-                <div class="product__price flex">
-                  <span class="new__price">$200.00</span>
-                  <span class="old__price">$245.00</span>
-                </div>
-
-                <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
-                  <i class="fi fi-rs-shopping-bag-add"></i>
-                </a>
-              </div>
-            </div>
+            <?php endforeach; ?>
+           
           </div>
           
           <div class="swiper-button-next"><i class="fi fi-rs-angle-right"></i></div>

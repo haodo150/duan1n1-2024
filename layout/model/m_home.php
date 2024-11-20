@@ -19,6 +19,12 @@
         return pdo_getAll($sql);
     }
 
+    function home_products_added(){
+        // Lấy 8 sản phẩm trong csdl
+        $sql = 'SELECT * FROM products ORDER BY id_product DESC LIMIT 8';
+        return pdo_getAll($sql);
+    }
+
     function home_products_arrival(){
         // Lấy 8 sản phẩm trong csdl
         $sql = 'SELECT * FROM products ORDER BY id_product DESC LIMIT 8';

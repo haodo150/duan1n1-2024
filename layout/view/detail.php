@@ -14,9 +14,7 @@
       <section class="details section--lg">
         <div class="details__container container grid">
           <div class="details__group">
-            <img src="<?= $baseUrl?> <?= $productDetail['img']?>" alt="" class="details__img">
-          
-           
+            <img src="<?= $baseUrl?><?= $productDetail['img']?>" alt="" class="details__img"> 
           </div>
 
           <div class="details__group">
