@@ -17,7 +17,7 @@
           <div class="register">
             <h3 class="section__title">Create an Account</h3>
 
-            <form action="?mod=user&act=post-register" class="form grid">
+            <form action="?mod=user&act=post-register" method="post" class="form grid">
               <input type="text" 
                 placeholder="Username" 
                 class="form__input" name="Username"
@@ -30,13 +30,17 @@
 
               <input type="password" 
                 placeholder="Your Password" 
-                class="form__input" name="YourPassword"
+                class="form__input" name="Password"
               />
 
               <div class="form__btn">
                 <button class="btn">Submit & Register</button>
               </div>
-
+              <?php if(isset($_SESSION['alert'])): ?>
+                <div class="alert-danger">
+                  <?= $_SESSION['alert'] ?>
+                </div>
+              <?php endif; unset($_SESSION['alert']) ?>
               
             </form>
           </div>

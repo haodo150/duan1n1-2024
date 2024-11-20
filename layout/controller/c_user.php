@@ -51,17 +51,17 @@
                 // Xử lý đăng ký
                 $Username = $_POST['Username'];
                 $Email = $_POST['Email'];
-                $YourPassword = $_POST['YourPassword'];
+                $Password = $_POST['Password'];
                 include_once "model/m_user.php";
                 // Kiểm tra email có tồn tại chưa
                 //  có rồi báo lỗi
                 if(user_Email($Email)){
                     $_SESSION['alert'] = "Email đã tồn tại vui lòng nhập Email khác!";
-                    header("Location:?mod=user&act=register");
+                    header("Location: ?mod=user&act=register");
 
                     }else{
-                    // Chưa có thì cho đk,
-                    user_register($Username, $Email, $YourPassword);
+                    // Chưa có thì cho đk
+                    user_register($Username, $Email, $Password);
                     header('Location: ?mod=user&act=login');
                     }
 

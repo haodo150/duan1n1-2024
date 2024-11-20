@@ -18,9 +18,9 @@
     }
 
 
-    function user_register($Username, $Email, $YourPassword) {
+    function user_register($Username, $Email, $Password) {
         $sql = "INSERT INTO account_user(`username`,`email`, `password`) VALUE (?,?,?)";
-        pdo_execute($sql, $username, $email, md5($password));
+        pdo_execute($sql, $Username, $Email, md5($Password));
 
     }
 ?>
