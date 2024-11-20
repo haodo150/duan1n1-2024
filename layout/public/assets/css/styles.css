@@ -1214,7 +1214,7 @@ table{
 
 .table tr th:nth-child(1),
 .table tr td:nth-child(1){
-  width: 216px;
+  width: 50px;
 }
 
 .table tr th:nth-child(2),

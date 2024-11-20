@@ -116,11 +116,16 @@
                 </li>
               </ul>
             </div>
+            <?php if(isset($_SESSION['alert'])): ?>
+                <div class="alert-danger">
+                  <?= $_SESSION['alert'] ?>
+                </div>
+              <?php endif; unset($_SESSION['alert']) ?>
 
             <div class="details__action">
-              <input type="number" class="quantity" value="3">
-
-              <a href="#" class="btn btn--sm">Add to Cart</a>
+              <input type="number" class="quantity" value="1">
+              
+              <a href="?mod=page&act=addToCart&id=<?= $productDetail['id_product']?>" class="btn btn--sm">Add to Cart</a>
 
               <a href="#" class="details__action-btn">
                 <i class="fi fi-rs-heart"></i>

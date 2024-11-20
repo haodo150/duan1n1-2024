@@ -9,6 +9,7 @@
                 include_once "view/detail.php";
                 include_once "view/footer.php";
                 break;
+                 
             default:
                 # code...
                 break;
