@@ -30,7 +30,6 @@
                 class="form__input"
               />
 
-              <input type="password" placeholder="Your Password" name="PassWord" class="form__input"/>
               <?php 
               if(isset($_SESSION['alert'])): ?>
               <div class="alert alert-danger">
