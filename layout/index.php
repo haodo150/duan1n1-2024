@@ -1,5 +1,6 @@
 <?php
     $baseURL = 'http://localhost/duan1n1-2024/layout/';
+    session_start();
     if (isset($_GET['mod'])) {
         # code...
         switch ($_GET['mod']) {

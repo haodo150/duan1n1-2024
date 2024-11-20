@@ -17,6 +17,7 @@
   --container-color: hsl(0, 0%, 93%) ;
   --border-color: hsl(129, 36%, 27%);
   --border-color-alt: hsl(113, 15%, 90%);
+  --alert-color-danger: hsl(0, 65%, 47%);
 
   /*========== Font and typography ==========*/
   /* .5rem = 8px | 1rem = 16px ... */
@@ -341,6 +342,7 @@ table{
   font-size: var(--small-font-size);
   font-weight: var(--weight-700);
   transition: all 0.4s var(--transition);
+  cursor: pointer;
 }
 .btn:hover{
   background-color: transparent;
@@ -1919,4 +1921,10 @@ table{
       display: block;
       width: 100%;
     }
+}
+/* ALERT */
+.alert-danger {
+  font-size: var(--small-font-size);
+  color: var(--alert-color-danger);
+  border-radius: 5px;
 }

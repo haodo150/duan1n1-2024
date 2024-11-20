@@ -5,7 +5,7 @@
       <!--=============== BREADCRUMB ===============-->
       <section class="breadcrumb">
         <ul class="breadcrumb__list flex container">
-          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><a href="?mod=page&act=home" class="breadcrumb__link">Home</a></li>
           <li><span class="breadcrumb__link">></span></li>
           <li><span class="breadcrumb__link">Login / Register</span></li>
         </ul>
@@ -17,20 +17,27 @@
           <div class="login">
             <h3 class="section__title">Login</h3>
 
-            <form action="" class="form grid">
-              <input type="email" 
+            <form action="?mod=user&act=post-login" method="post" class="form grid">
+              <input type="email"
+                name="Email" 
                 placeholder="Your Email" 
                 class="form__input"
               />
 
               <input type="password" 
+                name="Password"
                 placeholder="Your Password" 
                 class="form__input"
               />
 
               <div class="form__btn">
-                <button class="btn">Login</button>
+                <button type="submit" class="btn">Login</button>
               </div>
+              <?php if(isset($_SESSION['alert'])): ?>
+                <div class="alert-danger">
+                  <?= $_SESSION['alert'] ?>
+                </div>
+              <?php endif; unset($_SESSION['alert']) ?>
 
               
             </form>

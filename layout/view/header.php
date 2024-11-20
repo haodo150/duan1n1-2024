@@ -13,6 +13,7 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="public/assets/css/styles.css" />
+    <!-- <link rel="stylesheet" href="public/assets/css/bootstrap.min.css" /> -->
 
     <title>FOOTWEAR SNEAKERS</title>
   </head>
@@ -28,20 +29,27 @@
           <p class="header__alert-news">
             Super Value Deals - Save more with coupons
           </p>
+          <?php if(isset($_SESSION['user'])): ?>
+            <div class="header__top-isset">
+              <a href="?mod=user&act=account" class="header__top-action">Hello, <?= $_SESSION['user']['username']?></a>
+              <a href="?mod=user&act=logout" class="header__top-action">Logout</a>
+            </div>
+          <?php else: ?>
           <a href="?mod=user&act=login" class="header__top-action">
             Log In/ Sign In
           </a>
+          <?php endif; ?>
         </div>
       </div>
 
       <nav class="nav container">
-        <a href="index.html" class="nav__logo">
+        <a href="?mod=page&act=home" class="nav__logo">
           <img src="public/assets/img/SNEAKERS-removebg-preview.png" alt="" class="nav__logo-img">
         </a>
 
         <div class="nav__menu" id="nav-menu">
           <div class="nav__menu-top">
-            <a href="index.html" class="nav__menu-logo">
+            <a href="?mod=page&act=home" class="nav__menu-logo">
               <img src="public/assets/img/logo.svg" alt="">
             </a>
 
