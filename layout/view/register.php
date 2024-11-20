@@ -34,7 +34,7 @@
               />
 
               <div class="form__btn">
-                <button class="btn">Submit & Register</button>
+                <button type="submit" class="btn">Submit & Register</button>
               </div>
               <?php if(isset($_SESSION['alert'])): ?>
                 <div class="alert-danger">

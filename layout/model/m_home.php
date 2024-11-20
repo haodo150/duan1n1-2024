@@ -18,4 +18,15 @@
         $sql = 'SELECT * FROM products ORDER BY id_product DESC LIMIT 8';
         return pdo_getAll($sql);
     }
+
+    function home_products_arrival(){
+        // Lấy 8 sản phẩm trong csdl
+        $sql = 'SELECT * FROM products ORDER BY id_product DESC LIMIT 8';
+        return pdo_getAll($sql);
+    }
+
+    function home_products_getById($id){
+        $sql = "SELECT * FROM products pd INNER JOIN categories cg ON pd.id_categories = cg.id_categories WHERE id_product=?";
+        return pdo_getOne($sql, $id);
+    }
 ?>

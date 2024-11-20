@@ -47,7 +47,8 @@
                 break;
             case 'detail':
                 // Xử lý
-
+                include_once "model/m_home.php";
+                $productDetail = home_products_getById($_GET['id']);
                 // Hiển thị
                 include_once "view/header.php";
                 include_once "view/detail.php";
