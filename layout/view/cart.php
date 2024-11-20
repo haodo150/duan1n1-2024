@@ -30,7 +30,7 @@
               </td>
 
               <td><span class="table__price">$110</span></td>
-              <td><input type="number" value="3" class="quantity"></td>
+              <td><input type="number" value="3" class="quantity"></td> 
               <td><span class="table__subtotal">$220</span></td>
               <td><i class="fi fi-rs-trash table__trash"></i></td>
             </tr>
