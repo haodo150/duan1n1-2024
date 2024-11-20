@@ -74,6 +74,7 @@
             <li class="nav__item">
               <a href="?mod=user&act=register" class="nav__link">Register</a>
             </li>
+            <?php endif; ?>
           </ul>
 
           <div class="header__search">
