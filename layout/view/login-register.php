@@ -31,13 +31,7 @@
               />
 
               <input type="password" placeholder="Your Password" name="PassWord" class="form__input"/>
-              <?php 
-              if(isset($_SESSION['alert'])): ?>
-              <div class="alert alert-danger">
-                <?= $_SESSION['alert'] ?>
-              </div>
-                <?php endif; 
-                unset($_SESSION['alert'] ) ?>
+              <?php>
               <div class="form__btn">
                 <button type="submit" class="btn">Login</button>
               </div>
