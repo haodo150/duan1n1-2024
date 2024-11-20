@@ -65,11 +65,9 @@
               <a href="?mod=page&act=products" class="nav__link">Shop</a>
             </li>
             <li class="nav__item">
-              <a href="?mod=user&act=account" class="nav__link">My account</a>
-            </li>
-            <li class="nav__item">
               <a href="?mod=page&act=compare" class="nav__link">Compare</a>
             </li>
+            <?php if(!isset($_SESSION['user'])): ?>
             <li class="nav__item">
               <a href="?mod=user&act=login" class="nav__link">Login</a>
             </li>
