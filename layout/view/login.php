@@ -30,8 +30,8 @@
                 class="form__input"
               />
 
-              <input type="password" placeholder="Your Password" name="PassWord" class="form__input"/>
-              <?php>
+              
+              <?php ?>
               <div class="form__btn">
                 <button type="submit" class="btn">Login</button>
               </div>
@@ -45,37 +45,7 @@
             </form>
           </div>
           
-          <div class="register">
-            <h3 class="section__title">Create an Account</h3>
-
-            <form action="" class="form grid">
-              <input type="text" 
-                placeholder="Username" 
-                class="form__input"
-              />
-
-              <input type="email" 
-                placeholder="Your Email" 
-                class="form__input"
-              />
-
-              <input type="password" 
-                placeholder="Your Password" 
-                class="form__input"
-              />
-
-              <input type="password" 
-                placeholder="Confirm Password" 
-                class="form__input"
-              />
-
-              <div class="form__btn">
-                <button class="btn">Submit & Register</button>
-              </div>
-
-              
-            </form>
-          </div>
+          
         </div>
       </section>
 
