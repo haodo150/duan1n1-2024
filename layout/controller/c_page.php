@@ -7,6 +7,8 @@
                 $homeCategories = home_category();
                 $homeProductsFeatured = home_products_featured();
                 $homeProductsPopuler = home_products_populer();
+                $homeProductsAdded = home_products_added();
+                $homeProductsArrival = home_products_arrival();
                 // Hiển thị
                 include_once "view/header.php";
                 include_once "view/home.php";
