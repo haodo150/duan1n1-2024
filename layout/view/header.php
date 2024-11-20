@@ -28,14 +28,14 @@
           <p class="header__alert-news">
             Super Value Deals - Save more with coupons
           </p>
-          <a href="?mod=user&act=login" class="header__top-action">
-            Log In/ Sign In
+          <a  class="header__top-action">
+            Xin chào, <?=$_SESSION['user']['Email'] ?>
           </a>
         </div>
       </div>
 
       <nav class="nav container">
-        <a href="index.html" class="nav__logo">
+        <a href="?mod=page&act=home" class="nav__logo">
           <img src="public/assets/img/SNEAKERS-removebg-preview.png" alt="" class="nav__logo-img">
         </a>
 

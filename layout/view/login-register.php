@@ -17,17 +17,17 @@
           <div class="login">
             <h3 class="section__title">Login</h3>
 
-            <form action="" class="form grid">
-              <input type="email" 
-                placeholder="Your Email" 
-                class="form__input"
-              />
+            <form action="?mod=user&act=post-login" method="post" class="form grid">
+              <input type="email" placeholder="Your Email" name="Email" class="form__input"/>
 
-              <input type="password" 
-                placeholder="Your Password" 
-                class="form__input"
-              />
-
+              <input type="password" placeholder="Your Password" name="PassWord" class="form__input"/>
+              <?php 
+              if(isset($_SESSION['alert'])): ?>
+              <div class="alert alert-danger">
+                <?= $_SESSION['alert'] ?>
+              </div>
+                <?php endif; 
+                unset($_SESSION['alert'] ) ?>
               <div class="form__btn">
                 <button class="btn">Login</button>
               </div>
