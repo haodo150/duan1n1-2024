@@ -17,7 +17,7 @@
           <?php foreach ($loadSanpham as $sanpham): ?>
           <div class="product__item">
             <div class="product__banner">
-              <a href="?mod=page&act=detail" class="product__images">
+              <a href="?mod=page&act=detail&id=<?= $sanpham['id_product']?>" class="product__images">
                 <img src="<?= $baseURL?><?= $sanpham['img']?>" alt="" class="product__img default">
 
                 <img src="public/assets/img/j1.2.png" alt="" class="product__img hover">

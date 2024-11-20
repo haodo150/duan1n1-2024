@@ -44,7 +44,7 @@
               <?php foreach($homeProductsFeatured as $featured): ?>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $featured['id_product']?>" class="product__images">
                     <img src="<?= $baseURL?><?= $featured['img']?>" alt="" class="product__img default">
 
                     <img src="public/assets/img/n1.2.png" alt="" class="product__img hover">
@@ -65,7 +65,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category"><?= $featured['id_categories']?></span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title"><?= $featured['name_products']?></h3>
                   </a>
                   <div class="product__rating">
@@ -95,7 +95,7 @@
             <?php foreach($homeProductsPopuler as $populer): ?>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                     <img src="<?= $baseURL?><?= $populer['img']?>" alt="" class="product__img default">
 
                     <img src="public/assets/img/n1.2.png" alt="" class="product__img hover">
@@ -116,7 +116,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category"><?= $populer['id_categories']?></span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title"><?= $populer['name_products']?></h3>
                   </a>
                   <div class="product__rating">
@@ -144,7 +144,7 @@
             <div class="products__container grid">
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                     <img src="public/assets/img/a1,1.png" alt="" class="product__img default">
 
                     <img src="public/assets/img/a1,3.png" alt="" class="product__img hover">
@@ -165,7 +165,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -188,7 +188,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                     <img src="public/assets/img/a2,1.png" alt="" class="product__img default">
 
                     <img src="public/assets/img/a2,3.png" alt="" class="product__img hover">
@@ -209,7 +209,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -232,7 +232,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                     <img src="public/assets/img/a3,1.png" alt="" class="product__img default">
 
                     <img src="public/assets/img/a3,2.png" alt="" class="product__img hover">
@@ -253,7 +253,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -276,7 +276,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                     <img src="public/assets/img/a4,1.png" alt="" class="product__img default">
 
                     <img src="public/assets/img/a4,3.png" alt="" class="product__img hover">
@@ -297,7 +297,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -320,7 +320,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                     <img src="public/assets/img/a5,1.png" alt="" class="product__img default">
 
                     <img src="public/assets/img/a5,3.png" alt="" class="product__img hover">
@@ -341,7 +341,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -364,7 +364,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                     <img src="public/assets/img/a6,1.png" alt="" class="product__img default">
 
                     <img src="public/assets/img/a6,3.png" alt="" class="product__img hover">
@@ -385,7 +385,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -408,7 +408,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                     <img src="public/assets/img/a7,1.png" alt="" class="product__img default">
 
                     <img src="public/assets/img/a7,3.png" alt="" class="product__img hover">
@@ -429,7 +429,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -452,7 +452,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="?mod=page&act=detail" class="product__images">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                     <img src="public/assets/img/a8,1.png" alt="" class="product__img default">
 
                     <img src="public/assets/img/a8,3.png" alt="" class="product__img hover">
@@ -472,7 +472,7 @@
                 </div>
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -541,7 +541,7 @@
             </div>
 
             <div class="deals__btn">
-              <a href="?mod=page&act=detail" class="btn btn--md">Shop Now</a>
+              <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="btn btn--md">Shop Now</a>
             </div>
           </div>
 
@@ -582,7 +582,7 @@
             </div>
 
             <div class="deals__btn">
-              <a href="?mod=page&act=detail" class="btn btn--md">Shop Now</a>
+              <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="btn btn--md">Shop Now</a>
             </div>
           </div>
         </div>
@@ -596,7 +596,7 @@
           <div class="swiper-wrapper">
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="?mod=page&act=detail" class="product__images">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                   <img src="public/assets/img/a1,1.png" alt="" class="product__img default">
 
                   <img src="public/assets/img/a1,3.png" alt="" class="product__img hover">
@@ -617,7 +617,7 @@
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -640,7 +640,7 @@
 
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="?mod=page&act=detail" class="product__images">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                   <img src="public/assets/img/a2,1.png" alt="" class="product__img default">
 
                   <img src="public/assets/img/a2,3.png" alt="" class="product__img hover">
@@ -661,7 +661,7 @@
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -684,7 +684,7 @@
 
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="?mod=page&act=detail" class="product__images">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                   <img src="public/assets/img/a3,1.png" alt="" class="product__img default">
 
                   <img src="public/assets/img/a3,2.png" alt="" class="product__img hover">
@@ -705,7 +705,7 @@
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -728,7 +728,7 @@
 
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="?mod=page&act=detail" class="product__images">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                   <img src="public/assets/img/a4,1.png" alt="" class="product__img default">
 
                   <img src="public/assets/img/a4,3.png" alt="" class="product__img hover">
@@ -749,7 +749,7 @@
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -772,7 +772,7 @@
 
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="?mod=page&act=detail" class="product__images">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                   <img src="public/assets/img/a5,1.png" alt="" class="product__img default">
 
                   <img src="public/assets/img/a5,3.png" alt="" class="product__img hover">
@@ -793,7 +793,7 @@
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -816,7 +816,7 @@
 
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="?mod=page&act=detail" class="product__images">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                   <img src="public/assets/img/a6,1.png" alt="" class="product__img default">
 
                   <img src="public/assets/img/a6,3.png" alt="" class="product__img hover">
@@ -837,7 +837,7 @@
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -860,7 +860,7 @@
 
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="?mod=page&act=detail" class="product__images">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="product__images">
                   <img src="public/assets/img/a7,1.png" alt="" class="product__img default">
 
                   <img src="public/assets/img/a7,3.png" alt="" class="product__img hover">
@@ -881,7 +881,7 @@
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="?mod=page&act=detail">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -915,7 +915,7 @@
               <h3 class="section__title">Hot Release</h3>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/n1.1.png" 
                   alt="" 
@@ -923,7 +923,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Floral Print Casual Cotton Dress
                     </h4>
@@ -937,7 +937,7 @@
               </div>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/n2.1.png" 
                   alt="" 
@@ -945,7 +945,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Ruffled Solid Long Sleeve Blouse
                     </h4>
@@ -959,7 +959,7 @@
               </div>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/n3.1.png" 
                   alt="" 
@@ -967,7 +967,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Multi-color Print V-neck T-Shirt
                     </h4>
@@ -985,7 +985,7 @@
               <h3 class="section__title">Deals & Outlet</h3>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/j1.1.jpg" 
                   alt="" 
@@ -993,7 +993,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Fish Print Patched T-shirt
                     </h4>
@@ -1007,7 +1007,7 @@
               </div>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/j2.1.png" 
                   alt="" 
@@ -1015,7 +1015,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Vintage Floral Print Dress
                     </h4>
@@ -1029,7 +1029,7 @@
               </div>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/j3.1.jpg" 
                   alt="" 
@@ -1037,7 +1037,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Multi-color Stripe Circle T-Shirt
                     </h4>
@@ -1055,7 +1055,7 @@
               <h3 class="section__title">Top Selling</h3>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/a1,1.png" 
                   alt="" 
@@ -1063,7 +1063,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Geometric Printed Long Sleeve Blouse
                     </h4>
@@ -1077,7 +1077,7 @@
               </div>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/a2,1.png" 
                   alt="" 
@@ -1085,7 +1085,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Print Patchwork Maxi Dress
                     </h4>
@@ -1099,7 +1099,7 @@
               </div>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/a3,1.png" 
                   alt="" 
@@ -1107,7 +1107,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Daisy Floral Print Straps Jumpsuit
                     </h4>
@@ -1125,7 +1125,7 @@
               <h3 class="section__title">Trendy</h3>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/a4,1.png" 
                   alt="" 
@@ -1133,7 +1133,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Geometric Printed Long Sleeve Blouse
                     </h4>
@@ -1147,7 +1147,7 @@
               </div>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/n4.1.png" 
                   alt="" 
@@ -1155,7 +1155,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Print Patchwork Maxi Dress
                     </h4>
@@ -1169,7 +1169,7 @@
               </div>
 
               <div class="showcase__item">
-                <a href="?mod=page&act=detail" class="showcase__img-box">
+                <a href="?mod=page&act=detail&id=<?= $populer['img']?>" class="showcase__img-box">
                   <img 
                   src="public/assets/img/n5.1.jpg" 
                   alt="" 
@@ -1177,7 +1177,7 @@
                 </a>
 
                 <div class="showcase__content">
-                  <a href="?mod=page&act=detail">
+                  <a href="?mod=page&act=detail&id=<?= $populer['img']?>">
                     <h4 class="showcase__title">
                       Daisy Floral Print Straps Jumpsuit
                     </h4>
