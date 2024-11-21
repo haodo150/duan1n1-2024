@@ -2,7 +2,7 @@
       <!--=============== BREADCRUMB ===============-->
       <section class="breadcrumb">
         <ul class="breadcrumb__list flex container">
-          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><a href="?mod=page&act=home" class="breadcrumb__link">Home</a></li>
           <li><span class="breadcrumb__link">></span></li>
           <li><span class="breadcrumb__link">Shop</span></li>
           <li><span class="breadcrumb__link">></span></li>
@@ -31,7 +31,7 @@
                 <p class="table__description">Maboriosam in a tonto nesciung distingy magndapibus</p>
               </td>
 
-              <td><span class="table__price"><?=$product['price_products']?></span></td>
+              <td><span class="table__price">$<?=$product['price_products']?></span></td>
               <td><?=$product['soluong']?></td>
               <td><span class="table__subtotal">$<?=number_format($product['subtotal'])?></span></td>
               <td><a href="?mod=page&act=delete&index=<?= $i-1 ?>"><i class="fi fi-rs-trash table__trash"></i></a></td>
@@ -108,7 +108,7 @@
               </tr>
             </table>
 
-            <a href="checkout.html" class="btn flex btn--md">
+            <a href="?mod=page&act=checkout" class="btn flex btn--md">
               <i class="fi fi-rs-box-alt"></i> Proceed To Checkout
             </a>
           </div>
