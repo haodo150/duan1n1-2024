@@ -31,7 +31,7 @@
           </p>
           <?php if(isset($_SESSION['user'])): ?>
             <div class="header__top-isset">
-              <a href="?mod=user&act=account" class="header__top-action">Hello, <?= $_SESSION['user']['username']?></a> /
+              <a href="?mod=user&act=account" class="header__top-action">Hello, <?= $_SESSION['user']['username']?></a>
               <a href="?mod=user&act=logout" class="header__top-action">Logout</a>
             </div>
           <?php else: ?>
@@ -65,17 +65,14 @@
               <a href="?mod=page&act=products" class="nav__link">Shop</a>
             </li>
             <li class="nav__item">
+              <a href="?mod=user&act=account" class="nav__link">My account</a>
+            </li>
+            <li class="nav__item">
               <a href="?mod=page&act=compare" class="nav__link">Compare</a>
             </li>
-            <?php if(!isset($_SESSION['user'])): ?>
             <li class="nav__item">
               <a href="?mod=user&act=login" class="nav__link">Login</a>
             </li>
-            
-            <li class="nav__item">
-              <a href="?mod=user&act=register" class="nav__link">Register</a>
-            </li>
-            <?php endif; ?>
           </ul>
 
           <div class="header__search">

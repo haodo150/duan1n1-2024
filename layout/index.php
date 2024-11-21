@@ -10,8 +10,6 @@
             case 'user':
                 include_once "controller/c_user.php";
                 break;
-            case 'product':
-                include_once "controller/c_product.php";
             default:
                 # code...
                 break;
