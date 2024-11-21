@@ -15,7 +15,6 @@
         <div class="table__container">
           <table class="table">
             <tr>
-              <th>STT</th>
               <th>Image</th>
               <th>Name</th>
               <th>Price</th>
@@ -23,11 +22,10 @@
               <th>Subtotal</th>
               <th>Remove</th>
             </tr>
-             <?php $i=1; $tong=0; foreach($cart as $product): ?>
+
             <tr>
-              <td><?=$i ?></td>
-              <td><img src="<?= $baseURL ?><?=$product['img']?>" alt="" class="table__img"></td>
-              <td><h3 class="table__title"><?=$product['name_products']?></h3>
+              <td><img src="public/assets/img/product-1-2.jpg" alt="" class="table__img"></td>
+              <td><h3 class="table__title">J.Crew Mercantile Women's Short-Sleeve</h3>
                 <p class="table__description">Maboriosam in a tonto nesciung distingy magndapibus</p>
               </td>
 
@@ -36,11 +34,6 @@
               <td><span class="table__subtotal">$<?=number_format($product['subtotal'])?></span></td>
               <td><a href="?mod=page&act=delete&index=<?= $i-1 ?>"><i class="fi fi-rs-trash table__trash"></i></a></td>
             </tr>
-             <?php 
-             $i++;
-            $tong += $product['subtotal'];
-            endforeach; ?>
-            
 
           </table>
         </div>
@@ -50,7 +43,7 @@
             <i class="fi-rs-shuffle"></i>Update Cart
           </a>
 
-          <a href="?mod=page&act=products" class="btn flex btn--md">
+          <a href="" class="btn flex btn--md">
             <i class="fi-rs-shopping-bag"></i>Continue Shopping
           </a> 
         </div>
@@ -101,10 +94,19 @@
             <h3 class="section__title">Cart Totals</h3>
 
             <table class="cart__total-table">
+              <tr>
+                <td><span class="cart__total-title"></span>Cart Subtotal</td>
+                <td><span class="cart__total-price"></span>$240,00</td>
+              </tr>
+
+              <tr>
+                <td><span class="cart__total-title"></span>Shipping</td>
+                <td><span class="cart__total-price"></span>$10</td>
+              </tr>
 
               <tr>
                 <td><span class="cart__total-title"></span>Total</td>
-                <td><span class="cart__total-price"></span>$<?= number_format($tong)  ?></td>
+                <td><span class="cart__total-price"></span>$250,00</td>
               </tr>
             </table>
 

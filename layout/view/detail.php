@@ -18,11 +18,13 @@
           </div>
 
           <div class="details__group">
-            <h3 class="details__title"><?= $productDetail['name_products']?></h3>
-            <p class="details__brand">Brands: <span><?= $productDetail['name_categories']?></span></p>
+            <h3 class="details__title">Henley Shirt</h3>
+            <p class="details__brand">Brands: <span>adidas</span></p>
 
             <div class="details__price flex">
-              <span class="new__price">$<?= $productDetail['price_products']?></span>
+              <span class="new__price">$116</span>
+              <span class="old__price">$200.00</span>
+              <span class="save__price">25% Off</span>
             </div>
 
             <p class="short__description">
@@ -116,16 +118,11 @@
                 </li>
               </ul>
             </div>
-            <?php if(isset($_SESSION['alert'])): ?>
-                <div class="alert-danger">
-                  <?= $_SESSION['alert'] ?>
-                </div>
-              <?php endif; unset($_SESSION['alert']) ?>
 
             <div class="details__action">
-              <input type="number" class="quantity" value="1">
-              
-              <a href="?mod=page&act=addToCart&id=<?= $productDetail['id_product']?>" class="btn btn--sm">Add to Cart</a>
+              <input type="number" class="quantity" value="3">
+
+              <a href="#" class="btn btn--sm">Add to Cart</a>
 
               <a href="#" class="details__action-btn">
                 <i class="fi fi-rs-heart"></i>
@@ -336,10 +333,10 @@
 
           <div class="product__item">
             <div class="product__banner">
-              <a href="?mod=page&act=detail&id=<?= $productDetail['id_product']?>" class="product__images">
-                <img src="public/assets/img/a1,1.png" alt="" class="product__img default">
+              <a href="details.html" class="product__images">
+                <img src="public/assets/img/product-2-1.jpg" alt="" class="product__img default">
 
-                <img src="public/assets/img/a1,2.png" alt="" class="product__img hover">
+                <img src="public/assets/img/product-2-2.jpg" alt="" class="product__img hover">
               </a>
               <div class="product__actions">
                 <a href="#" class="action__btn" aria-label="Quick View">
@@ -357,7 +354,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Clothing</span>
-              <a href="?mod=page&act=detail&id=<?= $productDetail['id_product']?>">
+              <a href="details.html">
                 <h3 class="product__title">Colorful Pattern Shirts</h3>
               </a>
               <div class="product__rating">
@@ -380,10 +377,10 @@
 
           <div class="product__item">
             <div class="product__banner">
-              <a href="?mod=page&act=detail&id=<?= $productDetail['id_product']?>" class="product__images">
-                <img src="public/assets/img/a2,1.png" alt="" class="product__img default">
+              <a href="details.html" class="product__images">
+                <img src="public/assets/img/product-3-1.jpg" alt="" class="product__img default">
 
-                <img src="public/assets/img/a2,2.png" alt="" class="product__img hover">
+                <img src="public/assets/img/product-3-2.jpg" alt="" class="product__img hover">
               </a>
               <div class="product__actions">
                 <a href="#" class="action__btn" aria-label="Quick View">
@@ -401,7 +398,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Clothing</span>
-              <a href="?mod=page&act=detail&id=<?= $productDetail['id_product']?>">
+              <a href="details.html">
                 <h3 class="product__title">Colorful Pattern Shirts</h3>
               </a>
               <div class="product__rating">
@@ -424,10 +421,10 @@
 
           <div class="product__item">
             <div class="product__banner">
-              <a href="?mod=page&act=detail&id=<?= $productDetail['id_product']?>" class="product__images">
-                <img src="public/assets/img/a3,1.png" alt="" class="product__img default">
+              <a href="details.html" class="product__images">
+                <img src="public/assets/img/product-5-1.jpg" alt="" class="product__img default">
 
-                <img src="public/assets/img/a3,2.png" alt="" class="product__img hover">
+                <img src="public/assets/img/product-5-2.jpg" alt="" class="product__img hover">
               </a>
               <div class="product__actions">
                 <a href="#" class="action__btn" aria-label="Quick View">
@@ -445,7 +442,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Clothing</span>
-              <a href="?mod=page&act=detail&id=<?= $productDetail['id_product']?>">
+              <a href="details.html">
                 <h3 class="product__title">Colorful Pattern Shirts</h3>
               </a>
               <div class="product__rating">
@@ -468,10 +465,10 @@
 
           <div class="product__item">
             <div class="product__banner">
-              <a href="?mod=page&act=detail&id=<?= $productDetail['id_product']?>" class="product__images">
-                <img src="public/assets/img/a4,1.png" alt="" class="product__img default">
+              <a href="details.html" class="product__images">
+                <img src="public/assets/img/product-6-1.jpg" alt="" class="product__img default">
 
-                <img src="public/assets/img/a4,2.png" alt="" class="product__img hover">
+                <img src="public/assets/img/product-6-2.jpg" alt="" class="product__img hover">
               </a>
               <div class="product__actions">
                 <a href="#" class="action__btn" aria-label="Quick View">
@@ -489,7 +486,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Clothing</span>
-              <a href="?mod=page&act=detail&id=<?= $productDetail['id_product']?>">
+              <a href="details.html">
                 <h3 class="product__title">Colorful Pattern Shirts</h3>
               </a>
               <div class="product__rating">
